@@ -11,9 +11,7 @@ One of the major challenges faced is time constraint.
 A feature i would lovw to add is diversify the country information in the application. (maybe you can wrap the PageView widget with the AboutDialog widget)
 
 
-here is the appetize link
-
-https://appetize.io/app/l6vk577ckhi332ufelken425cm?device=pixel4&osVersion=11.0&scale=75
+[Appetize Link](https://appetize.io/embed/lp7lue36g3hegwqhpm3t755nbe?device=pixel4&osVersion=11.0&scale=75&deviceColor=black)
 
 
-Apk Link: https://drive.google.com/drive/folders/1mhc4eN_AEfnTOhXB70YnFr04OjyOSutf?usp=sharing
+[Apk Link](https://drive.google.com/drive/folders/1mhc4eN_AEfnTOhXB70YnFr04OjyOSutf?usp=sharing)
