@@ -1,58 +1,43 @@
-import 'package:equatable/equatable.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class CountryModel extends Equatable {
-  const CountryModel({
-    required this.nameCommon,
-    required this.nameOfficial,
-    required this.capital,
-    required this.region,
-    required this.subregion,
-    required this.area,
-    required this.population,
-    required this.continents,
-    required this.flagPng,
-    this.unGrouped = 'All Countries',
-  });
+import '../Constants/theme_provider.dart';
 
-  final String nameCommon;
-  final String nameOfficial;
-  final String capital;
-  final String region;
-  final String subregion;
-  final double area;
-  final int population;
-  final String continents;
-  final String flagPng;
-  final String unGrouped;
+class countryApiDetails extends StatelessWidget {
+  const countryApiDetails({
+    Key? key,
+    required this.provider,
+    required this.info,
+    required this.title,
+    required this.subtitle,
+  }) : super(key: key);
+
+  final ThemeProvider provider;
+  final info;
+  final String title;
+  final String subtitle;
 
   @override
-  List<Object?> get props => [
-    nameCommon,
-    nameOfficial,
-    capital,
-    region,
-    subregion,
-    area,
-    population,
-    continents,
-    flagPng,
-  ];
-
-  factory CountryModel.fromJson(Map<String, dynamic> json) {
-    return CountryModel(
-      nameCommon: json["name"]["common"],
-      nameOfficial: json["name"]["official"],
-      capital: List<String>.from(
-          json["capital"]?.map((cap) => cap) ?? ['No Capital'])
-          .toString()
-          .replaceAll(']', '')
-          .replaceAll('[', ''),
-      region: json["region"],
-      subregion: json["subregion"] ?? 'No Subregion',
-      area: json["area"],
-      population: json["population"],
-      continents: json["continents"][0],
-      flagPng: json["flags"]["png"],
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(
+          title,
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            color: provider.isDark ? Colors.white : Colors.black,
+            fontSize: MediaQuery.textScaleFactorOf(context) * 20,
+          ),
+        ),
+        Text(
+          subtitle,
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            color: provider.isDark ? Colors.grey : Colors.grey,
+            fontSize: MediaQuery.textScaleFactorOf(context) * 20,
+          ),
+        ),
+      ],
     );
   }
 }

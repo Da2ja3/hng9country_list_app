@@ -8,16 +8,3 @@ class ThemeProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
-// bool _iconBool = false;
-//
-// IconData _iconLight = Icons.wb_sunny;
-// IconData _iconDark= Icons.nights_stay;
-//
-// ThemeData _lightTheme= ThemeData(
-//   primarySwatch: Colors.amber,
-//   brightness: Brightness.light,
-// );
-// ThemeData _darkTheme= ThemeData(
-//   primarySwatch: Colors.amber,
-//   brightness: Brightness.dark,
-// );
