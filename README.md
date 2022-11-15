@@ -1,16 +1,17 @@
 # country_list_app
 
-A new Flutter project.
 
-## Getting Started
+It is aimed to fetch country information from the internet by using the REST Countries API resource, create a model instance from each of these countries, and display them on the screen after the sorting and grouping processes are applied.
 
-This project is a starting point for a Flutter application.
+In the application, bloc, http, intl, collection, and sliver_tools packages are mainly used.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+One of the major challenges faced is time constraint.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A feature i would lovw to add is diversify the country information in the application. (maybe you can wrap the PageView widget with the AboutDialog widget)
+
+
+[Appetize Link](https://appetize.io/embed/lp7lue36g3hegwqhpm3t755nbe?device=pixel4&osVersion=11.0&scale=75&deviceColor=black)
+
+
+[Apk Link](https://drive.google.com/drive/folders/1mhc4eN_AEfnTOhXB70YnFr04OjyOSutf?usp=sharing)
